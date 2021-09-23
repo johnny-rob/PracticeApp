@@ -6,8 +6,6 @@ class BlogsUploader < CarrierWave::Uploader::Base
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
-  # Add an whitelist of extensions which are allowed to be uploaded.
-  # For images you might use something like this:
   def extension_whitelist
      %w(jpg jpeg gif png)
   end

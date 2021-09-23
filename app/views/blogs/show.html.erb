@@ -7,7 +7,7 @@
 
 <p>
   <strong>Image:</strong>
-  <%= @blog.image %>
+  <%= image_tag @blog.main_image.to_s unless @blog.main_image.nil? %>
 </p>
 
 <p>
